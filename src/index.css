@@ -5,9 +5,230 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  margin: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1abc9c;
+
+}
+
+nav {
+  position: fixed;
+	z-index: 999;
+	height: 50px;
+	background-color: black;
+	top: 0px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+  padding-top: 10px;
+}
+
+.logo {
+  display: flex;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 50%;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover {
+  color: blue;
+}
+
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+	cursor: pointer;
+}
+
+.menu-toggle span {
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color:white;
+	border-radius: 3px;
+}
+
+.jumbotron {
+  background-image: url('./img/wallpaper.jpg');
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jumbotron a {
+  text-decoration: none;
+  color: white;
+}
+
+.jumbotron img {
+  margin-top: 30vh;
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  background-color: blue;
+  color: white;
+  border: 0px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.about {
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  background-color: black;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.about img {
+  width: 400px;
+}
+
+.movies {
+  text-align: center;
+}
+
+.movie-list {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.movie-list img {
+  width: 250px;
+  cursor: pointer;
+}
+
+.movie-list-item {
+  margin-top:20px;
+  margin-bottom: 50px;
+}
+
+.movie-list-item h3, .movie-list-item p {
+  margin: 0px;
+}
+
+.movie-list-item h3 {
+  margin-top: 10px;
+}
+
+.movie-list-item button {
+  background-color: green;
+  margin-top: 15px;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: -217px;
+  z-index: 99999;
+  display: none;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  color: black;
+}
+
+.modal ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.modal ul li {
+  margin-bottom: 40px;
+}
+
+.modal ul a {
+  color: black;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f1c40f;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 425px){
+  .menu-toggle {
+    display: flex;
+  }
+  ul {
+    display: none;
+  }
+  .about {
+    margin-top: 20px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .description {
+    order: 2;
+  }
+  .movies {
+    margin-top: 50px;
+  }
+  .jumbotron {
+    text-align: center;
+  }
+  .jumbotron img {
+    margin-top: 24vh;
+  }
+  .modal-open {
+    display: flex;
+    left: 0;
+  }
+
+}
+
+
+

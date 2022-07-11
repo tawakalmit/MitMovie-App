@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Nav from './components/nav';
+import Jumbotron from './components/jumbotron';
+import About from './components/about';
+import Movies from './components/movies';
+import Footer from './components/footer';
+import Modal from './components/modal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Modal />
+    <Nav />
+    <Jumbotron />
+    <About />
+    <Movies />
+    <Footer />
   </React.StrictMode>
 );
 
