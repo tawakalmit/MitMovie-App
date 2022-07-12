@@ -117,7 +117,7 @@ button {
 .about {
   display: flex;
   width: 80%;
-  height: 50vh;
+  height: auto;
   background-color: black;
   justify-content: space-around;
   margin: auto;
@@ -205,7 +205,7 @@ footer a {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 425px){
   .menu-toggle {
     display: flex;
   }
